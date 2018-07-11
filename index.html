@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>New York Times Article Search</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+        <h1 class="text-center title"><strong><i class="fa fa-newspaper"></i> New York Times Search</strong></h1>  
+    </div>
+
+      <div="panel panel-primary">
+          <div class="panel-heading border border-dark rounded">
+              <h3 class="panel-title rounded-top"><strong><i class="fa fa-newspaper"></i> Search Parameters</strong></h3>
+              <form>
+                <div class="form-group">
+                  <label for="userSearch">Search Term:</label>
+                  <input type="text" class="form-control" id="search-term" aria-describedby="search terms" placeholder="Enter Your Search Query">
+                </div>
+                <div class="form-group">
+                    <label for="userRecords">Number of Records to Retrieve:</label>
+                    <select class="form-control" id="number-of-records">
+                      <option>1</option>
+                      <option>5</option>
+                      <option>10</option>
+                    </select>
+                <div class="form-group">
+                  <label for="userStart">Start Year (Optional):</label>
+                  <input type="text" class="form-control" id="start-year" placeholder="Choose a Starting Year">
+                </div>
+                <div class="form-group">
+                  <label for="userEnd">End Year (Optional):</label>
+                  <input type="text" class="form-control" id="end-year" placeholder="Choose an Ending Year">
+                </div>
+                <button id="searchit" type="submit" class="btn btn-primary"><i class="fa fa-search"></i> Search</button>
+                <button type="submit" class="btn btn-primary"><i class="fa fa-trash"></i> Clear Results</button>
+              </form>
+          </div>
+      </div>
+
+      <div="panel panel-primary">
+          <div class="panel-heading border border-dark rounded">
+              <h3 class="panel-title rounded-top"><strong><i class="fa fa-table"></i> Top Articles</strong></h3>
+             <div id="temp" class="panel-body">
+
+             </div>
+          </div>
+      </div>
+
+      
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
